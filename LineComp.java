@@ -26,10 +26,27 @@ public class LineComp {
 		double A1 = Math.pow(X11, 2) + Math.pow(Y11, 2);
 		double S1 = Math.sqrt(A1);
 		System.out.println("The Length of Line is =" + S1);
-		if (S == S1) 
+		if (S == S1)
+		{ 
 			System.out.println("The Lines Are Equal");
-		else 
-			System.out.println("The Lines Are Not Equal");
+		}
+		else if (S < S1) 
+		{
+			System.out.println("The Line1 is less than Line2");
+		}
+		else if (S > S1)
+		{
+			System.out.println("The Line1 is greater than Line2");
+		}
+		else if (S1 < S)
+		{
+			System.out.println("The Line2 is less than Line1");
+		}
+		else if (S1 > S)
+		{
+			System.out.println("The Line2 is greater than Line1 ");
+		}
+
 
       
 

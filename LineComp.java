@@ -15,23 +15,23 @@ public class LineComp {
 		double S = Math.sqrt(A);
 		System.out.println("The Length of The Line is =" + S);
 
-      
-      System.out.println("Enter X3 and Y3 values of First point");
-      int X3 = data.nextInt();
-      int Y3 = data.nextInt();
-      System.out.println("Enter X4 and Y4 of Second Point");
-      int X4 = data.nextInt();
-      int Y4 = data.nextInt();
-      int X11 = X4 - X3;
-      int Y11 = Y4 - Y3;
-      double A1 = Math.pow(X11, 2) + Math.pow(Y11,2);
-      double S1 = Math.sqrt(A1);
-      System.out.println("The Length of The Line is =" + S1);
-
-		if (S == S1)
+		System.out.println("Enter X3 And Y3 Values Of Second Line");
+		int X3 = data.nextInt();
+		int Y3 = data.nextInt();
+		System.out.println("Enter X4 And Y4 Values of Second Line");
+		int X4 = data.nextInt();
+		int Y4 = data.nextInt();
+		int X11 = X4 - X3;
+		int Y11 = Y4 - Y3;
+		double A1 = Math.pow(X11, 2) + Math.pow(Y11, 2);
+		double S1 = Math.sqrt(A1);
+		System.out.println("The Length of Line is =" + S1);
+		if (S == S1) 
 			System.out.println("The Lines Are Equal");
-		else
+		else 
 			System.out.println("The Lines Are Not Equal");
+
+      
 
 	}
 }
